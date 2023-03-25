@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gulnar Amiraslanova</title>
     <script src="https://kit.fontawesome.com/a8632d3ece.js" crossorigin="anonymous"></script>
-   
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -177,12 +176,12 @@
         </div>
 
         <div class="row">
-            <form action="">
-                <input type="text" placeholder="name" class="box">
-                <input type="email" placeholder="email" class="box">
-                <input type="number" placeholder="number" class="box">
+            <form onsubmit="sendMail()">
+                <input id = "name" type="text" placeholder="name" class="box">
+                <input id = "email" type="email" placeholder="email" class="box">
+                <input id="phone" type="number" placeholder="number" class="box">
 
-                <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
+                <textarea id = "message" placeholder="message" cols="30" rows="10"></textarea>
                 <input type="submit" class="btn" value="send message">
             </form>
 
@@ -192,9 +191,17 @@
     </section>
     <!--contact section ends-->
     <!--footer section-->
-<footer><i class="fas fa-copyright"></i>   by <span>gulnar </span>amiraslanova </footer>
+    <footer><i class="fas fa-copyright"></i>   by <span>gulnar </span>amiraslanova </footer>
     <!--footer section ends-->
     <script src="/script.js">
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init("ClnMkclAhFMHq3o4Q");
+    })();
     </script>
 </body>
 </html>
