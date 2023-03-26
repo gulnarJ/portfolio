@@ -159,7 +159,9 @@ header .follow a:hover{
  .active{
     opacity: 0;
 }
-
+.email{
+    text-transform: lowercase;
+}
 .about .row-1{
     display: flex;
     flex-wrap: wrap;
@@ -217,6 +219,7 @@ padding-bottom: 45px;
     padding: 30px;
     background: white;
     border-radius: 7px;
+    text-transform: none;
 }
 .service .box-container .box i{
     height: 5rem;
@@ -267,7 +270,7 @@ padding-bottom: 45px;
     bottom: 7px; left: 15px;
     font-size: 20px;
     color: rgb(46, 45, 45);
-    text-transform: uppercase;
+    
 }
 .portfolio .box-container .box .icons{
     position: absolute;
@@ -386,7 +389,7 @@ footer span{
         padding: 0;
     }
     #menu-bars{
-        display: initial;
+        display: none;
     }
     header{
         left: -120%;
@@ -395,10 +398,18 @@ footer span{
 
 @media (max-width:450px){
     html{
-        font-size:  50%;
+        font-size:  40%;
     }
-  
-    header{
-        width : 100%;
+    .about .content h3 {
+        font-weight: 500;
+        font-size: 20px;
     }
+        
+    
+    .about .row-1 .content .box-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
 }
