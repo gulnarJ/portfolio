@@ -1,24 +1,3 @@
-import express from 'express';
-
-
-const express = require('express')
-const app = express()
-
-// Add the Permissions-Policy header to all responses
-app.use((req, res, next) => {
-  res.setHeader('Permissions-Policy', 'interest-cohort=()')
-  next()
-})
-
-// Your route handlers and other middleware
-// ...
-
-// Start the server
-app.listen(3000, () => {
-  console.log('Server started on http://localhost:3000')
-})
-
-
 
 let menu = document.querySelector("#menu-bars");
 let header = document.querySelector('header');
