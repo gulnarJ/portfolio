@@ -186,7 +186,7 @@ header .follow a:hover{
 .about .row-1 .content h4{
     color: rgb(63, 63, 63);
     font-size: 30px;
-    margin: 25px 0;
+    margin: 10px 0;
     font-weight: 500;
 }
 .about .row-1 .content p{
@@ -406,9 +406,6 @@ footer span{
 @media (max-width:450px){
     html{
         font-size:  40%;
-    }
-    .about .content h4 {
-        font-size: 20px;
     }
         
     .about .row-1 .content .box-container{
