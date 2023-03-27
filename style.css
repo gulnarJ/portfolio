@@ -101,14 +101,12 @@ header .follow a:hover{
     flex: 1 1 450px;
 }
 
-.me{
-    border-radius: 100px;
-}
 .home .image img{
     width: 100%;
 }
 .home .content{
-    flex: 1 1 600px;
+    flex: 1 1 500px;
+    margin-bottom: 90px;
 }
 .home .content .hi{
     font-size: 30px;
@@ -185,9 +183,11 @@ header .follow a:hover{
 .about .row-1 .content{
     flex: 1 1 500px;
 }
-.about .row-1 .content h3{
-    color: rgb(43, 43, 43);
-    font-size: 35px;
+.about .row-1 .content h4{
+    color: rgb(63, 63, 63);
+    font-size: 30px;
+    margin: 25px 0;
+    font-weight: 500;
 }
 .about .row-1 .content p{
     font-size: 18px;
@@ -208,10 +208,15 @@ header .follow a:hover{
 .service  h1{
 padding-bottom: 45px;
 }
+
+.service{
+    margin-bottom: 94px;
+}
 .service .box-container{
     display: flex;
     flex-wrap: wrap;
     gap: 26px
+    
 }
 .service .box-container .box{
     flex: 1 1 30rem;
@@ -238,7 +243,9 @@ padding-bottom: 45px;
     font-size: 16px;
     color: rgb(76, 74, 74);
 }
-
+.portfolio{
+    margin-bottom: 20px;
+}
 .portfolio .box-container{
     display: flex;
     flex-wrap: wrap;
@@ -400,16 +407,24 @@ footer span{
     html{
         font-size:  40%;
     }
-    .about .content h3 {
-        font-weight: 500;
+    .about .content h4 {
         font-size: 20px;
     }
         
-    
     .about .row-1 .content .box-container{
         flex-direction: column;
         gap: 20px;
     }
-
+    .me{
+        display: none;
+    }
+    .contact .row form .btn{
+        font-size: 15px;
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+    .contact .row form .box{
+        font-size: 13px;
+    }
 
 }
